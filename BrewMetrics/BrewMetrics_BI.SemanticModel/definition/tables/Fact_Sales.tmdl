@@ -102,6 +102,14 @@ table Fact_Sales
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		
+	
+    measure 'Target Attainment %' =
+        DIVIDE (
+            SUM ( Fact_Sales[sales_amount] ),
+            100000
+        )
+
 
 	partition Fact_Sales = m
 		mode: import
