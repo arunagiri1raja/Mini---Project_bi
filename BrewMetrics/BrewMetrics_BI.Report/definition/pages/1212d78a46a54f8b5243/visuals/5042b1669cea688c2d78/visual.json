@@ -4,10 +4,10 @@
   "position": {
     "x": 323.15717181192315,
     "y": 699.83081793664883,
-    "z": 5001,
+    "z": 6000,
     "height": 362.26536457897117,
     "width": 681.30588452067877,
-    "tabOrder": 5001
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -96,56 +96,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "8b5bf241eda9f8fbf52a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_City"
-              }
-            },
-            "Property": "city"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "7c834a3fcb881bcc1978",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_Sales"
-                  }
-                },
-                "Property": "sales_amount"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "ff6dfb628c1c0aa0c222",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_Sales"
-              }
-            },
-            "Property": "store_format"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

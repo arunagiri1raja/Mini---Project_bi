@@ -4,10 +4,10 @@
   "position": {
     "x": 1599.3192515787534,
     "y": 584.56456557061256,
-    "z": 5005,
+    "z": 10000,
     "height": 137.90783765222199,
     "width": 271.69902343422837,
-    "tabOrder": 5005
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -52,23 +52,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4192e27f0940ec4c76c2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_Sales"
-              }
-            },
-            "Property": "MoM Sales Growth"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

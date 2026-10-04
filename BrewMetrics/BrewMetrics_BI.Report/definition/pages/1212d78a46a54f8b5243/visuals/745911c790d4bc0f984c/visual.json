@@ -4,10 +4,10 @@
   "position": {
     "x": 1661.0690296319872,
     "y": 0,
-    "z": 5003,
+    "z": 8000,
     "height": 88.508015209635,
     "width": 259.34906782358161,
-    "tabOrder": 5003
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "slicer",
@@ -68,23 +68,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "87ab832b7dc98ec535fe",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Date"
-              }
-            },
-            "Property": "date"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

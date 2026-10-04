@@ -4,10 +4,10 @@
   "position": {
     "x": 1049.7462269049734,
     "y": 549.57302467378008,
-    "z": 5002,
+    "z": 7000,
     "height": 512.52315784183986,
     "width": 524.87311345248668,
-    "tabOrder": 5002
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -81,42 +81,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c98ea3835bf244e176cb",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_Sales"
-                  }
-                },
-                "Property": "sales_amount"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "50b516de947df8e0e589",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Product"
-              }
-            },
-            "Property": "item"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
