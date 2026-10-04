@@ -23,6 +23,21 @@ table Fact_Sales
 			    )
 			)
 
+	measure 'Target Attainment %' =
+			DIVIDE (
+			    SUM ( Fact_Sales[sales_amount] ),
+			    100000
+			)
+
+	measure 'Item Sales Rank' =
+			RANKX (
+			    ALL ( Fact_Sales[item] ),
+			    CALCULATE ( SUM ( Fact_Sales[sales_amount] ) ),
+			    ,
+			    DESC,
+			    DENSE
+			)
+
 	column sale_id
 		dataType: int64
 		formatString: 0
@@ -102,14 +117,6 @@ table Fact_Sales
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
-		
-	
-    measure 'Target Attainment %' =
-        DIVIDE (
-            SUM ( Fact_Sales[sales_amount] ),
-            100000
-        )
-
 
 	partition Fact_Sales = m
 		mode: import
