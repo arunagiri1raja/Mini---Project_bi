@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "c6573759345bad4b63b3",
+  "name": "87c33018f6383ef05e0f",
   "position": {
-    "x": 316.9821940065998,
-    "y": 199.6576157054557,
-    "z": 5000,
-    "height": 479.58994288011525,
-    "width": 658.664299234493,
-    "tabOrder": 5000
+    "x": 333.44880148746211,
+    "y": 214.06589725121023,
+    "z": 10000,
+    "height": 465.18166133436068,
+    "width": 636.02271394830734,
+    "tabOrder": 10000
   },
   "visual": {
-    "visualType": "hundredPercentStackedBarChart",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Dim_Product"
+                      "Entity": "Fact_Sales"
                     }
                   },
                   "Property": "category"
                 }
               },
-              "queryRef": "Dim_Product.category",
+              "queryRef": "Fact_Sales.category",
               "nativeQueryRef": "category",
               "active": true
             }
@@ -81,62 +81,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "482ec23281a589b6dbbb",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Dim_Product"
-                  }
-                },
-                "Property": "category"
-              }
-            },
-            "Function": 2
-          }
-        },
-        "type": "Advanced",
-        "howCreated": "User"
-      },
-      {
-        "name": "c1830522936418e1b3f0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Product"
-              }
-            },
-            "Property": "category"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6c9fb1b36681158fa055",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_Sales"
-                  }
-                },
-                "Property": "sales_amount"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -3,11 +3,11 @@
   "name": "a1aa235c108f0a041b51",
   "position": {
     "x": 1599.3192515787534,
-    "y": 584.56456557061256,
-    "z": 10000,
-    "height": 137.90783765222199,
-    "width": 271.69902343422837,
-    "tabOrder": 10000
+    "y": 778.04720347074488,
+    "z": 8000,
+    "height": 284.04897904487513,
+    "width": 321.09884587681535,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -51,6 +51,63 @@
         "isDefaultSort": true
       }
     },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2c38477fcd1466efb727",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_Sales"
+              }
+            },
+            "Property": "MoM Sales Growth"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
